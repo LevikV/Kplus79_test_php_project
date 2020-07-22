@@ -1,11 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
     <title>Пример асинхронного обмена данными</title>
 </head>
 <body style="text-align: center">
   <h1>Загрузка веб-страницы в контейнер DIV</h1>
   <div id="info">Это предложение будет изменено</div>
 
+<script>
+
+//Кроссбраузерная функция асинхронного обмена
+    function asuncRequest(){
+        try{
+            var request = new XMLHttpRequest()
+        }
+        catch (e1) {
+            try{
+                request = new ActiveXObject("Msxml2.XMLHTTP")
+            }
+            catch (e2) {
+                try{
+                    request = new ActiveXObject("Microsoft.XMLHTTP")
+                }
+                catch (e3) {
+                    request = false
+                }
+            }
+        }
+        return request
+    }
+</script>
 </body>
 </html>
