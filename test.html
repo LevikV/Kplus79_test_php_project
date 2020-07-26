@@ -5,13 +5,29 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+<!--Первый способ подключения Bootstrap (через библиотеку CDN)-->
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+<!--Второй способ подключения Bootstrap (локальный)-->
+    <!--
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    -->
+<!--Наши собственные стили для переопределения-->
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js"></script>
+<!--Подключаем иконочный шрифт-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 </head>
 <body>
+<!--Работа с текстом
 <blockquote>
     <p>
         Какая то умная цитата о смысле жизни и жизенном пути каждого человека. <br>
@@ -28,5 +44,83 @@
                 for (int i=0; i < 4; i++)
                     print ("HI");
             </pre>
+-->
+
+<!--Работа с кнопками
+
+<br>
+<button class="btn btn-secondary">Стандартная</button>
+<input type="submit" class="btn btn-primary" value="Основная">
+<input type="button" class="btn btn-success" value="Подтвердить">
+<a href="#" class="btn btn-info">Уведомление</a>
+
+<button class="btn btn-danger">Отмена</button>
+<br>
+<button class="btn btn-danger btn-lg">Отмена</button>
+<button class="btn btn-danger btn-sm">Отмена</button>
+<br><br>
+<button class="btn btn-danger btn-block">Отмена</button>
+<br><br>
+
+<div class="btn-group-vertical">
+    <div class="btn-group btn-group-sm">
+        <button class="btn btn-primary">Отмена</button>
+        <button class="btn btn-primary">Отмена</button>
+        <button class="btn btn-primary">Отмена</button>
+    </div>
+    <div class="btn-group btn-group-sm">
+        <button class="btn btn-primary">Отмена</button>
+        <button class="btn btn-primary">Отмена</button>
+        <button class="btn btn-primary">Отмена</button>
+    </div>
+
+
+</div>
+-->
+<!--Работа с формами и полями-->
+<!--
+<div class="container">
+    <form role="form">
+        <div class="form-group row">
+            <label for="email" class="col-md-2">Email</label>
+            <div class="col-md-4">
+                <input type="email" class="form-control" id="email" placeholder="Input Email">
+            </div>
+            <label for="email" class="col-md-2">Email</label>
+            <div class="col-md-4">
+                <input type="email" class="form-control" id="email" placeholder="Input Email">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" placeholder="Input password">
+        </div>
+        <div class="form-check">
+            <label for="email">
+                <input type="checkbox"> Checkbox
+            </label>
+        </div>
+        <div class="row">
+            <div class="form-group col-md-4">
+                <label for="ad1">Адресс 1</label>
+                <input type="text" class="form-control is-invalid" id="ad1" placeholder="Введите 1 адресс">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="ad2">Адресс 2</label>
+                <input type="text" class="form-control is-valid" id="ad2" placeholder="Введите 2 адресс">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="ad3">Адресс 3</label>
+                <input type="text" class="form-control" id="ad3" placeholder="Введите 3 адресс" disabled>
+            </div>
+        </div>
+
+
+        <button type="button" class="btn btn-success">Register</button>
+    </form>
+
+</div>
+-->
+<i class="fa fa-class-name"></i>
 </body>
 </html>
