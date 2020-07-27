@@ -19,7 +19,9 @@
     <link rel="stylesheet" href="css/main.css">
     <script src="js/main.js"></script>
 <!--Подключаем иконочный шрифт-->
+<!--
     <link rel="stylesheet" href="css/font-glyphicons.css">
+-->
 
 </head>
 <body>
@@ -142,12 +144,16 @@
 </div>
 -->
 <!--Выпадающие меню и списки-->
+<!--
 <div class="dropdown">
     <button class="btn btn-info dropdown-toggle" data-toggle="dropdown">Список</button>
     <ul class="dropdown-menu">
+        <li class="dropdown-header">Заголовок 1</li>
         <li class="dropdown-item"><a href="#">CSS</a></li>
         <li class="dropdown-item"><a href="#">HTML</a></li>
         <li class="dropdown-item"><a href="#">JQuery</a></li>
+        <li class="dropdown-divider"></li>
+        <li class="dropdown-item disabled"><a href="#">PHP</a></li>
     </ul>
 
 </div>
@@ -163,6 +169,105 @@
         <a class="dropdown-item" href="#">Something else here</a>
     </div>
 </div>
+-->
+<!--Изучаем JS Collapse-->
+<!--
+<span data-toggle="collapse" data-target="#hide">JS Collapse</span>
+<div class="collapse in" id="hide">
+    Какой то скрытый текст
+</div>
+
+<div class="card-deck" id="collapse-group">
+    <div class="card">
+        <div class="card-header">
+            <span data-toggle="collapse" data-target="#el1" data-parent="#collapse-group">Заголовок первого элемента</span>
+        </div>
+        <div class="collapse" id="el1">
+            <div class="card-body">
+                Содержание первого блока
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <span data-toggle="collapse" data-target="#el2" data-parent="#collapse-group">Заголовок второго элемента</span>
+        </div>
+        <div class="collapse" id="el2">
+            <div class="card-body">
+                Содержание второго блока
+            </div>
+        </div>
+    </div>
+</div>
+-->
+<!--Изучаем создание модальных окон modal.js-->
+<!--
+<button class="btn btn-info" data-toggle="modal" data-target="#myModal">Всплывающее окно</button>
+
+<div id="myModal" class="modal fade" tabindex="-1">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Заголовок окна</h4>
+                <button class="close" data-dismiss="modal" aria-hidden="true">x</button>
+            </div>
+            <div class="modal-body">
+                Какой то текст уведомления
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-danger" data-dismiss="modal">Закрыть</button>
+            </div>
+        </div>
+    </div>
+</div>
+-->
+<!--Создание табов и вкладок tab.js-->
+<!--
+<br>
+<div class="container">
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item"><a class="nav-link" href="#home" role="tab" data-toggle="tab">Домой</a></li>
+        <li class="nav-item"><a class="nav-link" href="#profile" role="tab" data-toggle="tab">Профиль</a></li>
+        <li class="nav-item"><a class="nav-link active" href="#message" role="tab" data-toggle="tab">Сообщения</a></li>
+        <li class="nav-item"><a class="nav-link" href="#settings" role="tab" data-toggle="tab">Настройки</a></li>
+
+    </ul>
+    <div class="tab-content">
+        <div role="tabpanel" class="tab-pane fade" id="home">Вкладка домой</div>
+        <div role="tabpanel" class="tab-pane fade" id="profile">Вкладка профиль</div>
+        <div role="tabpanel" class="tab-pane active fade show" id="message">Вкладка сообщений</div>
+        <div role="tabpanel" class="tab-pane fade" id="settings">Вкладка настроек</div>
+    </div>
+</div>
+
+<br>
+<div class="container">
+    <ul class="nav nav-tabs" role="tablist" id="myTabs">
+        <li class="nav-item"><a class="nav-link" href="#tab1" role="tab">Домой</a></li>
+        <li class="nav-item"><a class="nav-link" href="#tab2" role="tab">Профиль</a></li>
+        <li class="nav-item"><a class="nav-link active" href="#tab3" role="tab">Сообщения</a></li>
+        <li class="nav-item"><a class="nav-link" href="#tab4" role="tab">Настройки</a></li>
+
+    </ul>
+    <div class="tab-content">
+        <div role="tabpanel" class="tab-pane fade" id="tab1">Вкладка домой</div>
+        <div role="tabpanel" class="tab-pane fade" id="tab2">Вкладка профиль</div>
+        <div role="tabpanel" class="tab-pane active fade show" id="tab3">Вкладка сообщений</div>
+        <div role="tabpanel" class="tab-pane fade" id="tab4">Вкладка настроек</div>
+    </div>
+</div>
+-->
+<!--Создание всплывающих подсказок tooltip.js-->
+<!--
+<br>
+<div class="container">
+    <a href="#" data-toggle="tooltip" title="Что то не сработало">Наведите курсор</a><br>
+    <button data-toggle="tooltip" title="Кнопка" data-placement="right" class="btn btn-success">Наведите курсор</button><br>
+    <a href="#" data-toggle="tooltip" data-placement="left" title="Что то не сработало">Наведите курсор</a><br>
+    <a href="#" data-toggle="tooltip" data-placement="top" title="Что то не сработало">Наведите курсор</a>
+</div>
+-->
+
 
 <!--Подключение Jquery-->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -170,5 +275,22 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
+<!--Скрипт для урока создания вкладок
+<script>
+    // #product a – селектор, выбирающий элементы a в #product (вкладки, при клике на которые нужно отображать соответствующий блок)
+    $('#myTabs a').click(function(e){
+        e.preventDefault();
+        $(this).tab('show');
+    });
+</script>
+-->
+<!--Скрипт для урока создания всплывающих подсказок
+<script>
+    $(document).ready (function () {
+        $('[data-toggle="tooltip"]').tooltip ();
+
+    });
+</script>
+-->
 </body>
 </html>
