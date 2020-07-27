@@ -6,12 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 <!--Первый способ подключения Bootstrap (через библиотеку CDN)-->
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <!--Второй способ подключения Bootstrap (локальный)-->
     <!--
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -24,7 +19,8 @@
     <link rel="stylesheet" href="css/main.css">
     <script src="js/main.js"></script>
 <!--Подключаем иконочный шрифт-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="css/font-glyphicons.css">
+
 </head>
 <body>
 <!--Работа с текстом
@@ -121,6 +117,58 @@
 
 </div>
 -->
-<i class="fa fa-class-name"></i>
+<!--Работа с иконочным шрифтом и изображениями-->
+<!--
+<i class="glyphicon glyphicon-eye-close" style="color: red; font-size: 34px"></i>
+<button class="btn btn-success">
+    <i class="glyphicon glyphicon-apple"></i>
+    Привет
+</button>
+<br>
+<img src="img/heart.jpg" class="img-thumbnail img-fluid rounded mx-auto d-block">
+-->
+<!--Работа с текстовыми панелями-->
+<!--
+<div class="card">
+    <div class="card-header">
+        <h1 class="card-title">Заголовок карточки</h1>
+    </div>
+    <div class="card-body">
+        Пример испольования карточки
+    </div>
+    <div class="card-footer">
+        Подвал карточки
+    </div>
+</div>
+-->
+<!--Выпадающие меню и списки-->
+<div class="dropdown">
+    <button class="btn btn-info dropdown-toggle" data-toggle="dropdown">Список</button>
+    <ul class="dropdown-menu">
+        <li class="dropdown-item"><a href="#">CSS</a></li>
+        <li class="dropdown-item"><a href="#">HTML</a></li>
+        <li class="dropdown-item"><a href="#">JQuery</a></li>
+    </ul>
+
+</div>
+
+<div class="dropdown show">
+    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Выпадающая ссылка
+    </a>
+
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+    </div>
+</div>
+
+<!--Подключение Jquery-->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<!--Bootstrap-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 </body>
 </html>
