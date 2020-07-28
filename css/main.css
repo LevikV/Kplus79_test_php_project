@@ -22,8 +22,8 @@ hr {
     font-size: 1.1em !important;
 }
 .slide1 {
-    background: url("../img/remont_pr.png");
-    height: 50%;
+    background: url("../img/remont_pc.png");
+    height: 65%;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -41,6 +41,14 @@ hr {
 }
 .slide3 {
     padding: 60px;
+    color: red;
+}
+.slide3 h5 {
+    font-weight: bold;
+}
+.slide4 {
+    background: red;
+    height: 200px;
 }
 @media (max-width: 574px) {
     .iml {
