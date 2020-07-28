@@ -20,16 +20,15 @@
 </head>
 <body>
 <!--Меню для сайта-->
-<nav class="navbar navbar-expand-xl bg-dark navbar-dark" >
-<!--
-    <a class="navbar-brand" href="#">Navbar</a>
--->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-
+<nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
+    <div class="container-fluid">
+        <a href="#" class="navbar-brand">KPlus</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
     <div class="collapse navbar-collapse" id="menu">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
                 <a class="nav-link" href="#">Главная</a>
             </li>
@@ -37,7 +36,7 @@
                 <a class="nav-link" href="#">Услуги</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Турбо-заправка</a>
+                <a class="nav-link" href="#">Турбо</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Отзывы</a>
@@ -50,82 +49,64 @@
             </li>
         </ul>
     </div>
-
-
 </nav>
 
-
-<div class="container-fluid">
+<!--Основной контент сайта-->
 <!--Первый слайд -->
+<div class="container-fluid slide1">
     <div class="row">
-        <div class="col">
-
-
+        <div class="col text-center align-self-center">
+            <h1 class="text-uppercase">Картридж+</h1>
+            <br>
+            <h5>Заправка и восстановление лазерных и струйных картриджей</h5>
+            <h5>Ремонт принтеров</h5>
+            <h5>Ремонт компьютеров</h5>
+            <button class="btn btn-danger">ЗВОНИТЕ: 8(42622)7-09-08</button>
         </div>
     </div>
-<!--Второй слайд -->
-    <div class="row justify-content-around">
-        <div class="col-md-7">
-            Second slide (form)
-        </div>
-        <div class="col-md-3">
-            Second slide (logo)
-        </div>
-    </div>
-<!--Третий слайд -->
-    <div class="row justify-content-around">
-        <div class="col-md-3">
-            Third slide (Refill cartridge)
-        </div>
-        <div class="col-md-3">
-            Third slide (Repair printer)
-        </div>
-        <div class="col-md-3">
-            Third slide (Repair computer)
-        </div>
-    </div>
-<!--Четвертый слайд -->
-    <div class="row justify-content-around">
-        <div class="col-md-2">Fourth slide (9 let opita)</div>
-        <div class="col-md-2">Fourth slide (Garantly)</div>
-        <div class="col-md-2">Fourth slide (Refill 15 minutes)</div>
-        <div class="col-md-2">Fourth slide (Test of each cartridge)</div>
-        <div class="col-md-2">Fourth slide (Pack in black paccket each cartridge)</div>
-    </div>
-<!--Пятый слайд -->
-    <div class="row justify-content-around">
-        <div class="col-md-5">Fiveth slide(Button order)</div>
-        <div class="col-md-5">Fiveth slide(Image)</div>
-    </div>
-<!--Шестой слайд -->
-    <div class="row">
-        <div class="col-md-6">Sixth slide(About image)</div>
-        <div class="col-md-6">Sixth slide(About article)</div>
-    </div>
-<!--Седьмой слайд -->
-    <div class="row justify-content-around">
-        <div class="col-md-5">Seventh slide(Button discount)</div>
-        <div class="col-md-5">Seventh slide(Image)</div>
-    </div>
-<!--Восьмой слайд -->
-    <div class="row justify-content-around">
-        <div class="col-md-5">Eighth slide(Feedback one)</div>
-        <div class="col-md-5">Eighth slide(Feedback two)</div>
-    </div>
-<!--Девятый слайд -->
-    <div class="row">
-        <div class="col-md-6">Nineth slide(Contact)</div>
-        <div class="col-md-6">Nineth slide(Map)</div>
-    </div>
-<!--Десятый слайд -->
-    <div class="row">
-        <div class="col">
-            Footer
-        </div>
-    </div>
-
 </div>
-
+<!--Второй слайд -->
+<hr>
+<div class="container slide2">
+    <div class="row justify-content-around">
+        <div class="col-sm-7 order-2 order-sm-1">
+            <br>
+            <h1>Воспользуйтесь нашими услугами прямо сейчас!</h1>
+            <form role="form">
+                <div class="form-group">
+                    <label for="name">Ваше имя</label>
+                    <input type="text" class="form-control" id="#name" placeholder="Иванов Иван">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Ваш номер телефона</label>
+                    <input type="text" class="form-control" id="#phone" placeholder="+7 (999) 999-9999">
+                </div>
+                <button class="btn btn-danger btn-lg" type="button">Заказать</button>
+            </form>
+        </div>
+        <div class="col-sm-3 order-1 order-sm-2 text-center">
+            <img class="img-fluid iml" src="img/logo_l.png">
+        </div>
+    </div>
+</div>
+<hr>
+<!--Третий слайд -->
+<div class="container-fluid slide3">
+    <div class="row justify-content-around">
+        <div class="col-sm-3">
+            <img class="img-fluid" src="img/cart.png">
+            <h3>Заправка картриджей</h3>
+        </div>
+        <div class="col-sm-3">
+            <img class="img-fluid" src="img/printer.png">
+            <h3>Заправка картриджей</h3>
+        </div>
+        <div class="col-sm-3">
+            <img class="img-fluid" src="img/pc.png">
+            <h3>Заправка картриджей</h3>
+        </div>
+    </div>
+</div>
 
 </body>
 </html>
