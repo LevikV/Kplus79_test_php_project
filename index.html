@@ -15,105 +15,225 @@
 
     <script src="js/main.js"></script>
     <link rel="stylesheet" href="css/main.css">
+    <!--Подключаем иконочный шрифт-->
+    <link rel="stylesheet" href="css/all.css">
 
     <title>Картридж плюс - заправка картриджей</title>
 </head>
 <body>
-<!--Меню для сайта-->
-<nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
-    <div class="container-fluid">
-        <a href="#" class="navbar-brand">KPlus</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-    </div>
-    <div class="collapse navbar-collapse" id="menu">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Главная</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Услуги</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Турбо</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Отзывы</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Цены</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Контакты</a>
-            </li>
-        </ul>
-    </div>
-</nav>
+    <!--Меню для сайта-->
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">KPlus</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Главная</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Услуги</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Турбо</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Отзывы</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Цены</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Контакты</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-<!--Основной контент сайта-->
-<!--Первый слайд -->
-<div class="container-fluid slide1">
-    <div class="row">
-        <div class="col text-center align-self-center">
-            <h1 class="text-uppercase">Картридж+</h1>
-            <br>
-            <h5>Заправка и восстановление лазерных и струйных картриджей</h5>
-            <h5>Ремонт принтеров</h5>
-            <h5>Ремонт компьютеров</h5>
-            <button class="btn btn-danger">ЗВОНИТЕ: 8(42622)7-09-08</button>
+    <!--Основной контент сайта-->
+    <!--Первый слайд -->
+    <div class="container-fluid slide1">
+        <div class="row">
+            <div class="col text-center align-self-center">
+                <h1 class="text-uppercase">Картридж+</h1>
+                <br>
+                <h5>Заправка и восстановление лазерных и струйных картриджей</h5>
+                <h5>Ремонт принтеров</h5>
+                <h5>Ремонт компьютеров</h5>
+                <button class="btn btn-danger">ЗВОНИТЕ: 8(42622)7-09-08</button>
+            </div>
         </div>
     </div>
-</div>
 <!--Второй слайд -->
-<hr>
-<div class="container slide2">
-    <div class="row justify-content-around">
-        <div class="col-sm-7 order-2 order-sm-1">
-            <br>
-            <h1>Воспользуйтесь нашими услугами прямо сейчас!</h1>
-            <form role="form">
-                <div class="form-group">
-                    <label for="name">Ваше имя</label>
-                    <input type="text" class="form-control" id="#name" placeholder="Иванов Иван">
-                </div>
-                <div class="form-group">
-                    <label for="phone">Ваш номер телефона</label>
-                    <input type="text" class="form-control" id="#phone" placeholder="+7 (999) 999-9999">
-                </div>
-                <button class="btn btn-danger btn-lg" type="button">Заказать</button>
-            </form>
-        </div>
-        <div class="col-sm-3 order-1 order-sm-2 text-center">
-            <img class="img-fluid iml" src="img/logo_l.png">
+    <hr>
+    <div class="container slide2">
+        <div class="row justify-content-around">
+            <div class="col-sm-7 order-2 order-sm-1">
+                <br>
+                <h1>Воспользуйтесь нашими услугами прямо сейчас!</h1>
+                <form role="form">
+                    <div class="form-group">
+                        <label for="name">Ваше имя</label>
+                        <input type="text" class="form-control" id="#name" placeholder="Иванов Иван">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Ваш номер телефона</label>
+                        <input type="text" class="form-control" id="#phone" placeholder="+7 (999) 999-9999">
+                    </div>
+                    <button class="btn btn-danger btn-lg" type="button">Заказать</button>
+                </form>
+            </div>
+            <div class="col-sm-3 order-1 order-sm-2 text-center">
+                <img class="img-fluid iml" src="img/logo_l.png">
+            </div>
         </div>
     </div>
-</div>
-<hr>
+    <hr>
 <!--Третий слайд -->
-<div class="container slide3">
-    <div class="row justify-content-around">
-        <div class="col-sm-3 text-center">
-            <img class="img-fluid" src="img/cart.png">
-            <h5>Заправка лазерных и струйных картриджей</h5><br>
-            <button class="btn btn-danger" type="button">Перейти</button>
-        </div>
-        <div class="col-sm-3 text-center">
-            <img class="img-fluid" src="img/printer.png">
-            <h5>Ремонт принтеров и копиров</h5><br>
-            <button class="btn btn-danger" type="button">Перейти</button>
-        </div>
-        <div class="col-sm-3 text-center">
-            <img class="img-fluid" src="img/pc.png">
-            <h5>Ремонт компьютерной техники</h5><br>
-            <button class="btn btn-danger" type="button">Перейти</button>
+    <div class="container slide3">
+        <div class="row justify-content-around">
+            <div class="col-sm-3 text-center">
+                <img class="img-fluid" src="img/cart.png">
+                <h5>Заправка лазерных и струйных картриджей</h5><br>
+                <button class="btn btn-danger" type="button">Перейти</button>
+            </div>
+            <div class="col-sm-3 text-center">
+                <img class="img-fluid" src="img/printer.png">
+                <h5>Ремонт принтеров и копиров</h5><br>
+                <button class="btn btn-danger" type="button">Перейти</button>
+            </div>
+            <div class="col-sm-3 text-center">
+                <img class="img-fluid" src="img/pc.png">
+                <h5>Ремонт компьютерной техники</h5><br>
+                <button class="btn btn-danger" type="button">Перейти</button>
+            </div>
         </div>
     </div>
-</div>
 <!--Четвертый слайд -->
 <div class="container-fluid slide4">
+    <div class="row justify-content-around">
+        <div class="col-sm-2 text-center">
+            <i class="fas fa-university" style="font-size: 80px; padding-bottom: 15px"></i>
+            <p>Более 9 лет опыта заправки картриджей</p>
+        </div>
+        <div class="col-sm-2 text-center">
+            <i class="fas fa-shield-alt" style="font-size: 80px; padding-bottom: 15px"></i>
+            <p>Гарантия 3 месяца на заправку картриджа</p>
+        </div>
+        <div class="col-sm-2 text-center">
+            <i class="far fa-clock" style="font-size: 80px; padding-bottom: 15px"></i>
+            <p>Заправка картриджа за 15 минут</p>
+        </div>
+        <div class="col-sm-2 text-center">
+            <i class="far fa-check-square" style="font-size: 80px; padding-bottom: 15px"></i>
+            <p>Каждый картриджи проходит тестирование</p>
+        </div>
+        <div class="col-sm-2 text-center">
+            <i class="fas fa-box" style="font-size: 80px; padding-bottom: 15px"></i>
+            <p>Каждый картридж упаковывается в черный пакет</p>
+        </div>
 
+    </div>
 </div>
+<!--Пятый слайд -->
+    <div class="container slide5">
+        <div class="row justify-content-around align-items-center">
+            <div class="col-sm-7 order-2 order-sm-1 text-center">
+                <br>
+                <h1 class="btn btn-outline-danger">Бесплатная доставка</h1>
+                <h1>Мы сами бесплатно заберем картридж и вернем заправленный в тот же день!*</h1>
+                <p>*Если заказ был принят после 16:00, доставка выполняется на следующий день</p>
+                <button class="btn btn-danger" type="button">Заказать заправку</button>
+            </div>
+            <div class="col-sm-3 order-1 order-sm-2 text-center ">
+                <img class="img-fluid" src="img/courier.png">
+            </div>
+        </div>
+    </div>
+<!--Шестой слайд -->
+    <div class="container-fluid slide6">
+        <div class="row">
+            <div class="col-lg-6" style="padding: 0px">
+                <img src="img/company.jpg">
+            </div>
+            <div class="col-lg-6" style="padding: 40px">
+                <br>
+                <h1>Некоторые факты о нас</h1>
+                <p>Наш сервис предоставляет услуги по заправке и восстановлению лазерных картриджей с 2009г.</p>
+                <p>Наши специалисты помогут Вам в любой ситуации и всегда пойдут навстречу, при этом мы гарантируем соблюдение сроков исполнения ремонта и высокого качества заправки.</p>
+                <p>Мы выполняем заправку картриджей HP, Samsung, Canon, Pantum, Oki, Kyocera, Brother, Sharp, Xerox, Epson, Panasonic.</p>
+                <p>Наш офис находится в центре города, также мы осуществляет доставку после заправки по всему городу.</p>
+                <p>Просто позвоните нам, и мы поможем решить вашу проблему!</p>
+            </div>
+        </div>
+    </div>
+<!--Седьмой слайд -->
+    <div class="container slide7">
+        <div class="row justify-content-around align-items-center">
+            <div class="col-sm-7 order-2 order-sm-1 text-center">
+                <br>
+                <h1 class="btn btn-outline-danger">-15% на первую заправку</h1>
+                <h3>Оставьте заявку и получите скидку 15% на вашу первую заправку в нашем сервисном центре</h3>
+                <button class="btn btn-danger" type="button">Получить скидку</button>
+            </div>
+            <div class="col-sm-3 order-1 order-sm-2 text-center ">
+                <img class="img-fluid" src="img/first_zapr.png">
+            </div>
+        </div>
+    </div>
+<!--Восьмой слайд -->
+    <div class="container-fluid slide8">
+        <div class="row text-center">
+            <div class="col-12">
+                <h1>Отзывы о нас</h1>
+            </div>
+            <div class="col-md-6">
+                <img class="img-fluid" src="img/otziv_1.jpg">
+                <h1>Гаврилов Андрей Михайлович</h1>
+                <p>@andrey_gavrilov_dv</p>
+                <p>Создатель "ЕвроТех" - Автосервис и Запчасти для европейских автомобилей</p>
+            </div>
+            <div class="col-md-6">
+                <img class="img-fluid" src="img/otziv_2.jpg">
+                <h1>Ксения Александровна Колесникова</h1>
+                <p>@3303alex</p>
+                <p>Системный администратор</p>
+            </div>
+        </div>
+    </div>
+<!--Девятый слайд-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-5" id="contact">
+                <h1>Контакты:</h1>
+                <br>
+                <p>8 (42622) 7 09 08<br>8 (924) 643 21 11<br>info@kplus79.ru</p>
+                <p>Шолом-Алейхема 30, Биробиджан</p>
+                <p>Мы находимся в центре города, ближайшая остановка "Старая площадь"</p>
+                <p>Так же подписывайтесь на нас в соцсетях</p>
+                <br>
+                <i class="fas fa-facebook"></i>
+                <i class="fas fa-instagram"></i>
+            </div>
+            <div class="col-12">
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A00e5a6195a086659a0cbf3989dbd84cdbb43f2bdeeb3e788bc288353d45dc7c4&amp;width=100%25&amp;height=600&amp;lang=ru_RU&amp;scroll=true"></script>
+            </div>
+
+        </div>
+    </div>
+<!--Десятый слайд-->
+    <div class="container-fluid slide10">
+        <div class="row text-center">
+            <div class="col">
+                © Все права защищены 2009г. - 2019г.<br>
+                ИП Димов А.А. ИНН 790153151885
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
 
