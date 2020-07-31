@@ -23,7 +23,6 @@ hr {
 }
 .slide1 {
     background: url("../img/remont_pc.png");
-    height: 65%;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -89,6 +88,10 @@ hr {
     background: red;
     color: white;
 }
+.imo {
+    width: 70%;
+    height: auto;
+}
 
 @media (min-width: 768px) {
     #contact {
@@ -99,7 +102,7 @@ hr {
     }
 }
 
-@media (max-width: 574px) {
+@media (max-width: 768px) {
     .iml {
         width: 50%;
         height: auto;
